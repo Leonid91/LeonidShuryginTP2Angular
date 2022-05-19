@@ -328,4 +328,6 @@ mat-drawer-content {
 
 a {
     padding: 5px;
+    margin: 7px;
+    width: 30px;
 }
