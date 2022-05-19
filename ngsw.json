@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1652963496937,
+  "timestamp": 1652964197221,
   "index": "/LeonidShuryginTP2Angular/index.html",
   "assetGroups": [
     {
@@ -13,7 +13,7 @@
       "urls": [
         "/LeonidShuryginTP2Angular/favicon.ico",
         "/LeonidShuryginTP2Angular/index.html",
-        "/LeonidShuryginTP2Angular/main.eaac7308f41b604e.js",
+        "/LeonidShuryginTP2Angular/main.4551d8b8fc1f2cb1.js",
         "/LeonidShuryginTP2Angular/manifest.webmanifest",
         "/LeonidShuryginTP2Angular/polyfills.6ffb987a38c07e07.js",
         "/LeonidShuryginTP2Angular/runtime.36b92a109b8232c8.js",
@@ -52,8 +52,8 @@
     "/LeonidShuryginTP2Angular/assets/icons/icon-72x72.png": "c457e56089a36952cd67156f9996bc4ce54a5ed9",
     "/LeonidShuryginTP2Angular/assets/icons/icon-96x96.png": "3914125a4b445bf111c5627875fc190f560daa41",
     "/LeonidShuryginTP2Angular/favicon.ico": "22f6a4a3bcaafafb0254e0f2fa4ceb89e505e8b2",
-    "/LeonidShuryginTP2Angular/index.html": "0b8acc1cd068ca73ad6f7bdfbb10e160bd1243f5",
-    "/LeonidShuryginTP2Angular/main.eaac7308f41b604e.js": "2bec229e02f097fe9daa956354c64cb1faf7ef8e",
+    "/LeonidShuryginTP2Angular/index.html": "725a415ef9f07b9e38d52e63ab7d1ea731c097c8",
+    "/LeonidShuryginTP2Angular/main.4551d8b8fc1f2cb1.js": "7c2df5b5ba70c8cbf463d218b133d04b2bc4ec32",
     "/LeonidShuryginTP2Angular/manifest.webmanifest": "378da0426b291fbf2f53a20e325b09c199b18341",
     "/LeonidShuryginTP2Angular/polyfills.6ffb987a38c07e07.js": "a4140417d8d791e0a3fb833b54b5c137ed02f365",
     "/LeonidShuryginTP2Angular/runtime.36b92a109b8232c8.js": "8d86bbb162bef34e43a97393087da808e81b4169",
