@@ -40,8 +40,6 @@ export class ArticleCreationComponent implements OnInit {
 
     const articleNew = new ArticleNew(newArticle);
 
-    this.articleService.createArticle(articleNew).subscribe()
-    this.goBack();
-    
+    this.articleService.createArticle(articleNew).subscribe({next: () => this.goBack()})
   }
 }
