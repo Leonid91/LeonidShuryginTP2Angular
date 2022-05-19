@@ -4,7 +4,6 @@ import { ArticleService } from '../service/article.service';
 import { MatTableDataSource } from '@angular/material/table';
 import { MatPaginator } from '@angular/material/paginator';
 import { MatSort } from '@angular/material/sort';
-import { waitForAsync } from '@angular/core/testing';
 
 @Component({
   selector: 'app-article-list',
@@ -28,25 +27,33 @@ export class ArticleListComponent implements AfterViewInit {
 
   ngAfterViewInit() {
 
-    this.articleService.getArticles().subscribe(async data =>
-      this.articleListData = await new MatTableDataSource<Article>(data)).closed
+    this.articleService.getArticles().subscribe(
+      async data => {
+        this.articleListData = await new MatTableDataSource<Article>(data)
+        this.articleListData.paginator = this.paginator;
+        this.articleListData.sort = this.sort;
+    }).closed
 
     // C'est très sale je sais mais j'ai pas eu le temps de trouver comment attendre que la table soit chargée
-    setTimeout(() => {
-      this.articleListData.paginator = this.paginator;
-      this.articleListData.sort = this.sort;
-    }, 1000)
+    // setTimeout(() => {
+    //   this.articleListData.paginator = this.paginator;
+    //   this.articleListData.sort = this.sort;
+    // }, 1000)
   }
 
   applyFilter(event: Event) {
     const filterValue = (event.target as HTMLInputElement).value;
     this.articleListData.filter = filterValue.trim().toLowerCase();
 
-    setTimeout(() => {
+    if (this.articleListData.paginator) {
+      this.articleListData.paginator.firstPage();
+    }
 
-      if (this.articleListData.paginator) {
-        this.articleListData.paginator.firstPage();
-      }
-    }, 1000)
+    // setTimeout(() => {
+
+    //   if (this.articleListData.paginator) {
+    //     this.articleListData.paginator.firstPage();
+    //   }
+    // }, 1000)
   }
 }
