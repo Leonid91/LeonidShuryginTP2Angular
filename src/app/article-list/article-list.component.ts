@@ -33,12 +33,6 @@ export class ArticleListComponent implements AfterViewInit {
         this.articleListData.paginator = this.paginator;
         this.articleListData.sort = this.sort;
     }).closed
-
-    // C'est très sale je sais mais j'ai pas eu le temps de trouver comment attendre que la table soit chargée
-    // setTimeout(() => {
-    //   this.articleListData.paginator = this.paginator;
-    //   this.articleListData.sort = this.sort;
-    // }, 1000)
   }
 
   applyFilter(event: Event) {
@@ -48,12 +42,5 @@ export class ArticleListComponent implements AfterViewInit {
     if (this.articleListData.paginator) {
       this.articleListData.paginator.firstPage();
     }
-
-    // setTimeout(() => {
-
-    //   if (this.articleListData.paginator) {
-    //     this.articleListData.paginator.firstPage();
-    //   }
-    // }, 1000)
   }
 }
