@@ -1,4 +1,4 @@
-import { AfterViewInit, ViewChild, Component, OnInit } from '@angular/core';
+import { AfterViewInit, ViewChild, Component } from '@angular/core';
 import { Article } from 'src/model/article';
 import { ArticleService } from '../service/article.service';
 import { MatTableDataSource } from '@angular/material/table';
